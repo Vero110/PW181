@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.plantilla')
+@section('titulo', 'Busqueda')
+@section('LOGIN')
 
-        @vite(['resources/js/app.js'])
-        <title> BUSQUEDAD </title>
-</head>
-<body>
-    <h1 class='display-1 text-center text-danger'> BUSQUEDAD </h1>  
+<div class="card text-center" style="width: 18rem; ">
+    <div class="card-body text-center">
+      <h5 class="card-title">Card </h5>
+      <p class="card-text">HOLA, EXAMEN PRIMER PARCIAL.</p>
+    </div>
+</div>
 
-    <form>
+<h1 class='display-1 text-center text-danger'> BUSQUEDAD </h1> 
         <div class="text-center">
             <label for="nombre">¿Qué prodcuto desea buscar?</label>
             <br>
             <input type="text" class="text-center" id="nombre" placeholder="Producto">
         </div>
 
-            <button type="submit" class="btn btn-primary " class="center">Buscar</button>
-    </form>
+        <button type="submit" class="btn btn-primary text-center">Buscar</button>
+@endsection
 
-
-</body>
-</html>
+ 

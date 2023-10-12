@@ -1,0 +1,3 @@
+<p>
+{{ $mensaje }} - {{ $fecha }}
+</p>

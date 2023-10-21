@@ -26,8 +26,6 @@
                 <input type="text" name="txtRecuerdo" class="form-control">
             </div>
     </div>
-
-
     <div class="card-footer text-body-secondary text-center">
         <div class="d-grid gap-2">
         <button type="submit" class="btn btn-outline-info">Guardar recuerdo</button>

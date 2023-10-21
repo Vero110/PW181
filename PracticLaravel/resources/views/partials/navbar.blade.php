@@ -15,12 +15,6 @@
           <li class="nav-item">
             <a class="nav-link {{ request()->routeIs('apodoMemories')?'text-warning fw-bold':''}}" href="/memories">Memories</a>
           </li>
-
-
-
-
-
-
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>

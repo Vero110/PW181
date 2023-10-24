@@ -22,7 +22,7 @@ class diarioController extends Controller
             'txtRecuerdo' => 'required|min:4',
         ]); */
 
-        return $req->all();
+        return redirect('/form')->with('confirmacion','Tu recuerdo llego al controlador');
 
         #MUESTRAME LA IP QUE UTILIZA ESA RUTA
         /* echo "<p>";

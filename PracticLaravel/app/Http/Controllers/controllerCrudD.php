@@ -12,9 +12,18 @@ class controllerCrudD extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function inicio()
+    {
+        
+        return view('welcome');
+
+    }
     public function index()
     {
-        //
+        $consR= DB::table('tb_recuerdos')->get();
+        
+        return view('recuerdos', compact('consR'));
+
     }
 
     /**

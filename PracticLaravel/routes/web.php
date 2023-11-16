@@ -8,8 +8,12 @@ use App\Http\Controllers\controllerCrudD;
 
 //Rutas para el nuevo controladorCrudD
 Route::get('/recuerdo/create', [controllerCrudD::class, 'create'])->name('recuerdo.create');
+//boton para insertar
 Route::post('/recuerdo',[controllerCrudD::class,'store'])->name('recuerdo.store');
-
+//ruta nueva
+Route::get('/recuerdo', [controllerCrudD::class, 'index'])->name('recuerdo.index');
+//ruta de inicio 
+Route::get('/', [controllerCrudD::class, 'inicio'])->name('recuerdo.inicio');
 
 
 
@@ -18,9 +22,9 @@ Route::post('/recuerdo',[controllerCrudD::class,'store'])->name('recuerdo.store'
 
 
 //Rutas individuales para controlador
-Route::get('/', [diarioController::class, 'metodoInicio'])->name('apodoInicio');
+//Route::get('/', [diarioController::class, 'metodoInicio'])->name('apodoInicio');
 //Route::get('/form', [diarioController::class, 'metodoFormulatio'])->name('apodoForm');
-Route::get('/memories', [diarioController::class, 'metodoRecuerdos'])->name('apodoMemories');
+//Route::get('/memories', [diarioController::class, 'metodoRecuerdos'])->name('apodoMemories');
 
 //ruta para el request post del recuerdo
 //Route::post('/guardarRecuerdo',[diarioController::class,'guardarRecuerdo'])->name('guardar');

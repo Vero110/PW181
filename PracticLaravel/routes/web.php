@@ -14,6 +14,10 @@ Route::post('/recuerdo',[controllerCrudD::class,'store'])->name('recuerdo.store'
 Route::get('/recuerdo', [controllerCrudD::class, 'index'])->name('recuerdo.index');
 //ruta de inicio 
 Route::get('/', [controllerCrudD::class, 'inicio'])->name('recuerdo.inicio');
+//ruta recuerdo, para que se haga la actualizacion de nuestro recuerdo
+Route::put('/recuerdo/{id}/confirm',[controllerCrudD::class,'update'])->name('recuerdo.update');
+//ruta para eliminar
+Route::delete('/recuerdo/{id}', [controllerCrudD::class, 'destroy'])->name('recuerdo.destroy');
 
 
 
